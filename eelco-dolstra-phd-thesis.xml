@@ -1,9 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?>
-<book
-  xmlns="http://docbook.org/ns/docbook"
-  version="5.0"
-  xml:lang="en"
-  xmlns:xi="http://www.w3.org/2001/XInclude"
-  xmlns:xl="http://www.w3.org/1999/xlink"
->
+<?xml version="1.0" encoding="UTF-8"?>
+<book xml:id="simple_book" xml:lang="nl-NL" xmlns="http://docbook.org/ns/docbook" version="5.0">
+  <!-- For language tags, see https://www.techonthenet.com/js/language_tags.php -->
+  <info>
+    <author><personname><firstname>Eelco</firstname> <surname>Dolstra</surname></personname></author>
+    <title>The Purely Functional Software Deployment Model</title>
+    <subtitle>
+      <foreignphrase xml:lang="nl-NL">
+        Het puur functionele softwaredeploymentmodel (met een samenvatting in het Nederlands)
+      </foreignphrase>
+    </subtitle>
+    <abstract xml:lang="nl-NL">
+      <simpara>
+        Proefschrift ter verkrijging van de graad van doctor aan de Universiteit Utrecht op gezag
+        van de Rector Magnificus, Prof. dr. W. H. Gispen, ingevolge het besluit van het College
+        voor Promoties in het openbaar te verdedigen op woensdag 18 januari 2006 des middags
+        te 12.45 uur
+      </simpara>
+      <simpara>door</simpara>
+      <!--
+        Chose  to wrap  "author"  in  "simpara" because  the
+        latter is strictly block  element whereas the status
+        of the  former is  unspecified (or,  more precisely,
+        arbitrarily determined by the context).
+      -->
+      <simpara><author><personname><firstname>Eelco</firstname> <surname>Dolstra</surname></personname></author></simpara>
+      <simpara>geboren op 18 augustus 1978, te Wageningen</simpara>
+    </abstract>
+    <meta>
+      <para>
+        Promotor: 
+        <personname>
+          <honorific>Prof. dr.</honorific> <firstname>S. Doaitse</firstname> <surname>Swierstra</surname>
+        </personname>, 
+        <org>
+          <orgname>Universiteit Utrecht</orgname>
+        </org>
+      </para>
+    </meta>
+    <meta>
+      <para>
+        Copromotor: 
+        <personname>
+          <honorific>Dr.</honorific> <firstname>Eelco</firstname> <surname>Visser</surname>
+        </personname>, 
+        <org>
+          <orgname>Universiteit Utrecht</orgname>
+        </org>
+      </para>
+    </meta>
+    <legalnotice>
+    </legalnotice>
+  </info>
+  <chapter xml:id="chapter_1">
+    <title>Chapter 1</title>
+    <para>Hello world!</para>
+    <para>I hope that your day is proceeding <emphasis>splendidly</emphasis>!</para>
+  </chapter>
+  <chapter xml:id="chapter_2">
+    <title>Chapter 2</title>
+    <para>Hello again, world!</para>
+  </chapter>
 </book>
